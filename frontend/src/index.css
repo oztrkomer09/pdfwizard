@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -10,6 +10,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+main {
+  width: 100%;
+}
+/* ---------------------------------- navbar ---------------------------------- */
 
 .wrapper-layout {
   display: flex;
@@ -28,6 +33,7 @@ code {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #0a155144;
 }
 
 .logo-brand {
@@ -39,6 +45,73 @@ code {
 
 .logo-brand p {
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 600;
   color: #0a1551;
 }
+
+/* ---------------------------------- end of navbar ---------------------------------- */
+
+/* ---------------------------------- link input section ---------------------------------- */
+
+.link-input-wrapper {
+  width: 100%;
+  height: 380px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-input-section p {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a1551;
+  margin: 0;
+}
+
+.link-input-section {
+  display: flex;
+  flex-direction: column;
+  row-gap: 68px;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.link-input-section .link-input input {
+  width: calc(100% - 32px);
+  height: 56px;
+  padding: 0 6px;
+  border: 1px solid rgba(180, 180, 180, 0.521);
+  box-shadow: 0px 2px 5px 0px rgb(165, 165, 165);
+  border-radius: 16px;
+  font-size: 16px;
+}
+
+.link-input-section .link-input button {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 16px;
+  top: 10px;
+  background-color: #0a1551;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.link-input-section .link-input button:active {
+  transform: scale(0.95);
+}
+
+/* ---------------------------------- end of link input section ---------------------------------- */
