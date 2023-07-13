@@ -1,59 +1,46 @@
 {
-  "name": "Ömer Faruk Öztürk",
-  "title": "Frontend Developer Intern - Jotform",
-  "location": "Eskişehir, Turkey",
-  "about": "An ambitious soft ware engineer who is highly motivated to achieve a high-bar of mastery in Web Development. Focusing on Frontend Development and eager to develop new skills related to Computer Science field, as well.",
+  "name": "Kaan Boyacı",
+  "title": "Web Developer",
+  "location": "İzmir, Turkey",
+  "about": "\"I'm Kaan, a passionate full-stack and backend web developer. I specialize in building scalable web applications and designing efficient server-side architecture.\n\nI have a strong command of programming languages such as JavaScript, PHP, and I'm proficient in frameworks like Node.js, React.js, Express.js and Laravel I enjoy collaborating with teams to deliver high-quality code and finding innovative solutions to complex problems.\n\nIf you're looking for a dedicated web developer who can bring your ideas to life and create impactful online experiences, I'd love to connect. Let's build something amazing together!\"",
   "experiences": [
     {
-      "title": "Frontend Developer Intern",
+      "title": "Back End Developer Intern",
       "subtitle": "Jotform",
-      "duration": "Jun 2023 - Present2 months",
+      "startDate": "Jul 2023",
+      "endDate": "Present",
       "location": "Ankara, Türkiye"
     },
     {
-      "title": "Software Developer Intern",
-      "subtitle": "AVKAR Yazılım San. ve Tic. Ltd. Şti.",
-      "duration": "Jul 2022 - Aug 20222 months",
-      "location": "Eskişehir, Türkiye"
+      "title": "Software Developer",
+      "subtitle": "Softtech",
+      "startDate": "Aug 2022",
+      "endDate": "Sep 2022",
+      "location": "İstanbul, Türkiye"
     }
   ],
   "educations": [
     {
-      "degree": "Lisans Derecesi",
-      "school": "Eskişehir Teknik Üniversitesi",
-      "date": "2018 - 2023"
-    },
-    {
-      "degree": "99,65",
-      "school": "Doğa Okulları",
-      "date": "2014 - 2018"
+      "degree": "Bilgisayar Mühendisliği",
+      "school": "Karabuk University",
+      "date": "2019 - 2024"
     }
   ],
   "licensesAndCertifications": [
     {
-      "title": "React Basics",
-      "issuingAuthority": "Meta",
-      "date": "Nov 2022"
+      "title": "Yapay Zekaya İlk Adım",
+      "issuingAuthority": "Global AI Hub",
+      "date": "Feb 2023"
     },
     {
-      "title": "HTML, CSS, and Javascript for Web Developers",
-      "issuingAuthority": "The Johns Hopkins University",
-      "date": "Sep 2022"
+      "title": "Sızma Testi",
+      "issuingAuthority": "BG-Tek Bilgi Güvenliği Teknolojileri",
+      "date": "Apr 2022"
     },
     {
-      "title": "Interactivity with JavaScript",
-      "issuingAuthority": "University of Michigan",
-      "date": "Sep 2022"
-    },
-    {
-      "title": "Cambridge K.E.T exam",
-      "issuingAuthority": "Cambridge Assessment English",
-      "date": ""
-    },
-    {
-      "title": "T-MBA Certificate",
-      "issuingAuthority": "Pearson",
-      "date": ""
+      "title": "Beyaz Şapkalı Hacker",
+      "issuingAuthority": "CYROPS Siber Güvenlik A.Ş.",
+      "date": "Dec 2021"
     }
   ]
 }

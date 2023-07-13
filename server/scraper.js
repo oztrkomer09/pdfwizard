@@ -36,23 +36,33 @@ const runLinkedInScraper = async (url) => {
       const experiences = experienceItems.map(item => {
         const titleElement = item.querySelector('h3.profile-section-card__title');
         const title = titleElement ? titleElement.innerText.trim() : '';
-
+      
         const subtitleElement = item.querySelector('h4.profile-section-card__subtitle a');
         const subtitle = subtitleElement ? subtitleElement.innerText.trim() : '';
-
-        const durationElement = item.querySelector('p.experience-item__duration span.date-range');
-        const duration = durationElement ? durationElement.innerText.trim() : '';
-
+      
+        const durationElement = item.querySelector('p.experience-item__duration');
+        const startDateElement = durationElement.querySelector('time:first-child');
+        const startDate = startDateElement ? startDateElement.innerText.trim() : '';
+      
+        const endDateElement = durationElement.querySelector('time:nth-child(2)');
+        const endDate = endDateElement ? endDateElement.innerText.trim() : 'Present';
+      
         const locationElement = item.querySelector('p.experience-item__location');
         const location = locationElement ? locationElement.innerText.trim() : '';
-
+      
         return {
           title,
           subtitle,
-          duration,
+          startDate,
+          endDate,
           location
         };
       });
+      
+      
+      
+      
+      
 
       const educations = educationItems.map(item => {
         const degreeElement = item.querySelector('span.education__item--degree-info');
