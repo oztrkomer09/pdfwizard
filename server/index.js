@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const fs = require('fs');
 
 const run = async () => {
   const browser = await puppeteer.launch({
@@ -7,25 +8,26 @@ const run = async () => {
   });
   const page = await browser.newPage();
 
-  await page.goto("https://tr.linkedin.com/in/kaan-boyac%C4%B1-6033011b4");
+  // await page.goto("https://www.linkedin.com/in/%C3%B6mer-faruk-%C3%B6zt%C3%BCrk-abb97a203/");
+  await page.goto("https://www.linkedin.com/in/kaan-boyac%C4%B1-6033011b4/");
 
-  // Beklenen öğenin seçicisini kullanarak öğenin sayfada görünmesini bekler
   await page.waitForSelector('h1');
   await page.waitForSelector('h1.top-card-layout__title');
-  // await page.waitForNavigation({waitUntil:"networkidle0"})
-
   await page.waitForSelector('div.core-section-container__content');
 
-  let title = await page.evaluate(() => document.title);
-  console.log(title);
-
-  const data1 = await page.evaluate(() => {
-    const element = document.querySelector('h1.top-card-layout__title'); // Hedef öğenin seçicisini burada da belirtin
-    return element.innerText.trim();
-  });
-  console.log(data1);
-
   const data = await page.evaluate(() => {
+    const nameElement = document.querySelector('h1.top-card-layout__title');
+    const name = nameElement ? nameElement.innerText.trim() : '';
+
+    const titleElement = document.querySelector('h2.top-card-layout__headline');
+    const title = titleElement ? titleElement.innerText.trim() : '';
+
+    const locationElement = document.querySelector('h3.top-card-layout__first-subline div.top-card__subline-item');
+    const location = locationElement ? locationElement.innerText.trim() : '';
+
+    const aboutElement = document.querySelector('section[data-section="summary"] p');
+    const about = aboutElement ? aboutElement.innerText.trim() : '';
+
     const experienceItems = Array.from(document.querySelectorAll('li.profile-section-card.experience-item'));
     const educationItems = Array.from(document.querySelectorAll('li.profile-section-card.education__list-item'));
     const licenseCertificationContainer = document.querySelector('section[data-section="certifications"]');
@@ -72,6 +74,7 @@ const run = async () => {
     const licensesAndCertifications = licenseCertificationItems.map(item => {
       const titleElement = item.querySelector('h3.profile-section-card__title a');
       const title = titleElement ? titleElement.innerText.trim() : '';
+      const alternativeTitle = item.querySelector('h3.profile-section-card__title').textContent.trim();
 
       const issuingAuthorityElement = item.querySelector('h4.profile-section-card__subtitle a');
       const issuingAuthority = issuingAuthorityElement ? issuingAuthorityElement.innerText.trim() : '';
@@ -80,46 +83,36 @@ const run = async () => {
       const date = dateElement ? dateElement.innerText.trim() : '';
 
       return {
-        title,
+        title: title || alternativeTitle,
         issuingAuthority,
         date
       };
     });
 
     return {
+      name,
+      title,
+      location,
+      about,
       experiences,
       educations,
       licensesAndCertifications
     };
   });
 
+  console.log('Name:', data.name);
+  console.log('Title/Ünvan:', data.title);
+  console.log('Konum:', data.location);
+  console.log('Hakkımda:', data.about);
   console.log('Deneyimler:', data.experiences);
   console.log('Eğitimler:', data.educations);
   console.log('Sertifikalar:', data.licensesAndCertifications.filter(item => !item.title.toLowerCase().includes('lisans')));
 
+  // JSON dosyasına verileri yaz
+  const jsonData = JSON.stringify(data, null, 2);
+  fs.writeFileSync('veriler.json', jsonData);
+
   await browser.close();
 };
+
 run();
-
-
-// (async () => {
-//   try {
-//     const browser = await puppeteer.launch({
-//       headless: false,
-//       executablePath: "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe",
-//     });
-
-//     const page = await browser.newPage();
-
-//     await page.goto('https://tr.linkedin.com/in/kaan-boyac%C4%B1-6033011b4');
-
-//     await page.waitForSelector('h1.text-heading-xlarge');
-//     const firstName = await page.$eval('h1.text-heading-xlarge', element => element.textContent.trim());
-
-//     console.log('First Name:', firstName);
-
-//     await browser.close();
-//   } catch (error) {
-//     console.error(error);
-//   }
-// })();

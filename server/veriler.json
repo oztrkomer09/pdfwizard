@@ -1,0 +1,44 @@
+{
+  "name": "Kaan Boyacı",
+  "title": "Web Developer",
+  "location": "İzmir, Türkiye",
+  "about": "\"I'm Kaan, a passionate full-stack and backend web developer. I specialize in building scalable web applications and designing efficient server-side architecture.\n\nI have a strong command of programming languages such as JavaScript, PHP, and I'm proficient in frameworks like Node.js, React.js, Express.js and Laravel I enjoy collaborating with teams to deliver high-quality code and finding innovative solutions to complex problems.\n\nIf you're looking for a dedicated web developer who can bring your ideas to life and create impactful online experiences, I'd love to connect. Let's build something amazing together!\"",
+  "experiences": [
+    {
+      "title": "Back End Developer Intern",
+      "subtitle": "Jotform",
+      "duration": "Tem 2023 - Halen1 ay",
+      "location": "Ankara, Türkiye"
+    },
+    {
+      "title": "Software Developer",
+      "subtitle": "Softtech",
+      "duration": "Ağu 2022 - Eyl 20222 ay",
+      "location": "İstanbul, Türkiye"
+    }
+  ],
+  "educations": [
+    {
+      "degree": "Bilgisayar Mühendisliği",
+      "school": "Karabuk University",
+      "date": "2019 - 2024"
+    }
+  ],
+  "licensesAndCertifications": [
+    {
+      "title": "Yapay Zekaya İlk Adım",
+      "issuingAuthority": "Global AI Hub",
+      "date": "Şub 2023"
+    },
+    {
+      "title": "Sızma Testi",
+      "issuingAuthority": "BG-Tek Bilgi Güvenliği Teknolojileri",
+      "date": "Nis 2022"
+    },
+    {
+      "title": "Beyaz Şapkalı Hacker",
+      "issuingAuthority": "CYROPS Siber Güvenlik A.Ş.",
+      "date": "Ara 2021"
+    }
+  ]
+}
