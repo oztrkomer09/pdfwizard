@@ -106,11 +106,11 @@ const run = async () => {
   console.log('Hakkımda:', data.about);
   console.log('Deneyimler:', data.experiences);
   console.log('Eğitimler:', data.educations);
-  console.log('Sertifikalar:', data.licensesAndCertifications.filter(item => !item.title.toLowerCase().includes('lisans')));
+  console.log('Sertifikalar:', data.licensesAndCertifications);
 
-  // JSON dosyasına verileri yaz
+
   const jsonData = JSON.stringify(data, null, 2);
-  fs.writeFileSync('veriler.json', jsonData);
+  fs.writeFileSync('data.json', jsonData);
 
   await browser.close();
 };
