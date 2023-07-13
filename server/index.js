@@ -8,8 +8,9 @@ const run = async () => {
   });
   const page = await browser.newPage();
 
-  // await page.goto("https://www.linkedin.com/in/%C3%B6mer-faruk-%C3%B6zt%C3%BCrk-abb97a203/");
-  await page.goto("https://www.linkedin.com/in/kaan-boyac%C4%B1-6033011b4/");
+  // const url = "https://www.linkedin.com/in/%C3%B6mer-faruk-%C3%B6zt%C3%BCrk-abb97a203/"
+  const url = "https://www.linkedin.com/in/kaan-boyac%C4%B1-6033011b4/"
+  await page.goto(url);
 
   await page.waitForSelector('h1');
   await page.waitForSelector('h1.top-card-layout__title');
