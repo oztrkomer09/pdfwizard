@@ -30,9 +30,14 @@ const runLinkedInScraper = async (url) => {
 
       const experienceItems = Array.from(document.querySelectorAll('li.profile-section-card.experience-item'));
       const educationItems = Array.from(document.querySelectorAll('li.profile-section-card.education__list-item'));
+      
       const licenseCertificationContainer = document.querySelector('section[data-section="certifications"]');
       const licenseCertificationItems = Array.from(licenseCertificationContainer.querySelectorAll('li.profile-section-card'));
 
+      const languagesContainer = document.querySelector('section[data-section="languages"]');
+      const languagesItems = Array.from(languagesContainer.querySelectorAll('li.profile-section-card'));
+
+      
       const experiences = experienceItems.map(item => {
         const titleElement = item.querySelector('h3.profile-section-card__title');
         const title = titleElement ? titleElement.innerText.trim() : '';
@@ -59,11 +64,6 @@ const runLinkedInScraper = async (url) => {
         };
       });
       
-      
-      
-      
-      
-
       const educations = educationItems.map(item => {
         const degreeElement = item.querySelector('span.education__item--degree-info');
         const degree = degreeElement ? degreeElement.innerText.trim() : '';
@@ -98,6 +98,19 @@ const runLinkedInScraper = async (url) => {
           date
         };
       });
+      
+      const languages = languagesItems.map(item => {
+        const titleElement = item.querySelector('h3.profile-section-card__title');
+        const title = titleElement ? titleElement.innerText.trim() : '';
+
+        const issuingAuthorityElement = item.querySelector('h4.profile-section-card__subtitle');
+        const issuingAuthority = issuingAuthorityElement ? issuingAuthorityElement.innerText.trim() : '';'';
+
+        return {
+          title,
+          issuingAuthority
+        };
+      });
 
       return {
         name,
@@ -106,7 +119,8 @@ const runLinkedInScraper = async (url) => {
         about,
         experiences,
         educations,
-        licensesAndCertifications
+        licensesAndCertifications,
+        languages
       };
     });
 
