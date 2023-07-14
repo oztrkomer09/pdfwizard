@@ -2,6 +2,11 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 
 const runLinkedInScraper = async (url) => {
+  const linkedInUrlPattern = /^https:\/\/www\.linkedin\.com\/in\/[-\w%.]+\/?$/;
+  if (!linkedInUrlPattern.test(url)) {
+    throw new Error('Please enter public LinkedIn profile URL');
+  }
+
   try {
     const browser = await puppeteer.launch({
       headless: true,
@@ -11,9 +16,15 @@ const runLinkedInScraper = async (url) => {
 
     await page.goto(url);
 
-    await page.waitForSelector('h1');
-    await page.waitForSelector('h1.top-card-layout__title');
-    await page.waitForSelector('div.core-section-container__content');
+    const requiredSelectors = [
+      'h1',
+      'h1.top-card-layout__title',
+      'div.core-section-container__content',
+    ];
+
+    await Promise.all(
+      requiredSelectors.map((selector) => page.waitForSelector(selector, { timeout: 5000 }))
+    );
 
     const data = await page.evaluate(() => {
       const nameElement = document.querySelector('h1.top-card-layout__title');
@@ -131,7 +142,7 @@ const runLinkedInScraper = async (url) => {
 
     return data;
   } catch (error) {
-    throw error;
+    throw new Error('Invalid LinkedIn profile URL');
   }
 };
 
