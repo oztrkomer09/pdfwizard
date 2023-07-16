@@ -1,56 +1,29 @@
 {
-  "name": "Kaan Boyacı",
-  "title": "Web Developer",
-  "location": "İzmir, Turkey",
-  "about": "\"I'm Kaan, a passionate full-stack and backend web developer. I specialize in building scalable web applications and designing efficient server-side architecture.\n\nI have a strong command of programming languages such as JavaScript, PHP, and I'm proficient in frameworks like Node.js, React.js, Express.js and Laravel I enjoy collaborating with teams to deliver high-quality code and finding innovative solutions to complex problems.\n\nIf you're looking for a dedicated web developer who can bring your ideas to life and create impactful online experiences, I'd love to connect. Let's build something amazing together!\"",
+  "name": "Vishal Tandale",
+  "title": "Aspiring full stack web developer at Masai School",
+  "location": "Pune, Maharashtra, India",
+  "about": "",
   "experiences": [
     {
-      "title": "Back End Developer Intern",
-      "subtitle": "Jotform",
-      "startDate": "Jul 2023",
-      "endDate": "Present",
-      "location": "Ankara, Türkiye"
-    },
-    {
-      "title": "Software Developer",
-      "subtitle": "Softtech",
-      "startDate": "Aug 2022",
-      "endDate": "Sep 2022",
-      "location": "İstanbul, Türkiye"
+      "title": "Design Engineer",
+      "subtitle": "RECO STORAGE SYSTEMS PVT. LTD.",
+      "startDate": "Apr 2021",
+      "endDate": "Apr 2022",
+      "location": "Pune, Maharashtra, India"
     }
   ],
   "educations": [
     {
-      "degree": "Bilgisayar Mühendisliği",
-      "school": "Karabuk University",
-      "date": "2019 - 2024"
+      "degree": "",
+      "school": "Masai",
+      "date": "2022 - 2023"
+    },
+    {
+      "degree": "Bachelor of Engineering - BE",
+      "school": "",
+      "date": "2018 - 2021"
     }
   ],
-  "licensesAndCertifications": [
-    {
-      "title": "Yapay Zekaya İlk Adım",
-      "issuingAuthority": "Global AI Hub",
-      "date": "Feb 2023"
-    },
-    {
-      "title": "Sızma Testi",
-      "issuingAuthority": "BG-Tek Bilgi Güvenliği Teknolojileri",
-      "date": "Apr 2022"
-    },
-    {
-      "title": "Beyaz Şapkalı Hacker",
-      "issuingAuthority": "CYROPS Siber Güvenlik A.Ş.",
-      "date": "Dec 2021"
-    }
-  ],
-  "languages": [
-    {
-      "title": "Türkçe",
-      "issuingAuthority": "Native or bilingual proficiency"
-    },
-    {
-      "title": "İngilizce",
-      "issuingAuthority": "Professional working proficiency"
-    }
-  ]
+  "licensesAndCertifications": [],
+  "languages": []
 }

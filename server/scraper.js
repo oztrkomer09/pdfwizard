@@ -2,10 +2,12 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 
 const runLinkedInScraper = async (url) => {
-  const linkedInUrlPattern = /^https:\/\/www\.linkedin\.com\/in\/[-\w%.]+\/?$/;
+  const linkedInUrlPattern = /^https:\/\/(?:\w+\.)?linkedin\.com\/in\/[-\w%.]+\/?$/;
   if (!linkedInUrlPattern.test(url)) {
-    throw new Error('Please enter public LinkedIn profile URL');
+    throw new Error('Please enter a valid LinkedIn profile URL');
   }
+  
+  
 
   try {
     const browser = await puppeteer.launch({
@@ -42,12 +44,12 @@ const runLinkedInScraper = async (url) => {
       const experienceItems = Array.from(document.querySelectorAll('li.profile-section-card.experience-item'));
       const educationItems = Array.from(document.querySelectorAll('li.profile-section-card.education__list-item'));
       
-      const licenseCertificationContainer = document.querySelector('section[data-section="certifications"]');
-      const licenseCertificationItems = Array.from(licenseCertificationContainer.querySelectorAll('li.profile-section-card'));
-
       const languagesContainer = document.querySelector('section[data-section="languages"]');
-      const languagesItems = Array.from(languagesContainer.querySelectorAll('li.profile-section-card'));
-
+      const languagesItems = languagesContainer ? Array.from(languagesContainer.querySelectorAll('li.profile-section-card')) : [];
+      
+      const licenseCertificationContainer = document.querySelector('section[data-section="certifications"]');
+      const licenseCertificationItems = licenseCertificationContainer ? Array.from(licenseCertificationContainer.querySelectorAll('li.profile-section-card')) : [];
+      
       
       const experiences = experienceItems.map(item => {
         const titleElement = item.querySelector('h3.profile-section-card__title');
