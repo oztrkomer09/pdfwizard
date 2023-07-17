@@ -23,6 +23,28 @@ const Information = () => {
         />
       </div>
       {/* Flow Section */}
+      <div className="flow-section">
+        <div className="flow-1">
+          <div className="flow-1-left">
+            <img src={human2} alt="human2" className="flow-1-left-human" />
+            <img
+              src={rectangle345}
+              alt="rectangle345"
+              className="flow-1-left-rectangle"
+            />
+          </div>
+          <div className="flow-1-right">
+            <h2 className="flow-1-right-title">
+              Build with only one link easily
+            </h2>
+            <p className="flow-1-right-info">
+              You can build a CV with only one link with the information on the
+              business platforms of yourself or the person whose CV you want to
+              view.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
