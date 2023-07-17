@@ -7,9 +7,8 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo-brand">
         <img src={logo} alt="logo" />
-        <p>pdfwizard</p>
+        <p>cvwizard</p>
       </div>
-      <img src={language} alt="language" />
     </div>
   );
 };

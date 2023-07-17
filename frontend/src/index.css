@@ -21,7 +21,7 @@ main {
 
 .navbar {
   width: calc(100% - 320px);
-  height: 32px;
+  height: 12px;
   background-color: white;
   padding: 50px 160px;
   display: flex;
@@ -39,8 +39,8 @@ main {
 
 .logo-brand p {
   font-size: 32px;
-  font-weight: 600;
-  color: #0a1551;
+  font-weight: 700;
+  color: #252d5b;
 }
 
 /* ---------------------------------- end of the navbar ---------------------------------- */
