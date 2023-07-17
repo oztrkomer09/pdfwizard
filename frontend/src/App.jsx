@@ -1,8 +1,8 @@
 import React from "react";
 import Layout from "./components/Layout";
-import LinkInput from "./components/shared/LinkInput";
-import Information from "./components/shared/Information";
-import ReversedInformation from "./components/shared/ReversedInformation";
+import LinkInput from "./components/sections/LinkInput";
+import Information from "./components/sections/Information";
+import ReversedInformation from "./components/sections/ReversedInformation";
 
 function App() {
   return (
