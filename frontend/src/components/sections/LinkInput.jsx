@@ -1,5 +1,5 @@
 import React from "react";
-import InputButtonComponent from "../shared/InputButtonComponent";
+import InputButtonComponent from "../shared/InputButton";
 import human1 from "../../assets/images/human1.png";
 import frame from "../../assets/images/empty_frame.png";
 import linkedIn from "../../assets/images/linkedIn.png";

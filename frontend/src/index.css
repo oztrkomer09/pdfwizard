@@ -19,14 +19,6 @@ main {
   height: 100%;
 }
 
-.section-wrapper {
-  width: 100%;
-  height: 900px;
-  background-color: white; /*this might be used in multiple sections*/
-  display: flex;
-  justify-content: center;
-}
-
 .navbar {
   width: calc(100% - 320px);
   height: 12px;
@@ -162,6 +154,7 @@ main {
   align-items: center;
   justify-content: center;
   row-gap: 20px;
+  flex-shrink: 0;
 }
 .link-section-bottom-bar p {
   font-size: 16px;
@@ -173,43 +166,54 @@ main {
 
 /* ---------------------------------- information section ---------------------------------- */
 
-.information-section {
-  width: 100%;
+.information-section-wrapper {
+  width: calc(100% - 320px);
   height: 100%;
-  padding: 0px 150px;
+  padding: 80px 160px;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  background-color: #0a1551;
+  justify-content: center;
 }
 
-.information-section p {
+.information-section-wrapper .info-section-title {
   text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  color: white;
+  font-size: 48px;
+  font-weight: 600;
+  color: #252d5b;
+  margin: 0;
+  padding: 0;
+}
+
+.information-section-wrapper .solution-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.solution-card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.solution-card h2 {
+  color: #050c34;
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.solution-card p {
+  color: #3e4652;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
 }
 
 /* ---------------------------------- end of the information section ---------------------------------- */
-
-/* ---------------------------------- reversed information section ---------------------------------- */
-
-.reversed-information-section {
-  width: 100%;
-  padding: 0px 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.reversed-information-section p {
-  text-align: center;
-  font-size: 36px;
-  font-weight: 800;
-  color: #0a1551;
-}
-
-/* ---------------------------------- end of the reversed information section ---------------------------------- */
 
 /* ---------------------------------- footer ---------------------------------- */
 
