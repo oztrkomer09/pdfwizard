@@ -1,6 +1,10 @@
 import React from "react";
 import SolutionCard from "../shared/SolutionCard";
 import human2 from "../../assets/images/human2.png";
+import human3 from "../../assets/images/human3.png";
+import human4 from "../../assets/images/human4.png";
+import human5 from "../../assets/images/human5.png";
+
 import rectangle345 from "../../assets/images/rectangle_345.png";
 import GetStartedButton from "../shared/GetStartedButton";
 
@@ -55,6 +59,11 @@ const Information = () => {
             most suitable templates.
           </p>
           <GetStartedButton />
+        </div>
+        <div className="flow-3">
+          <img src={human3} alt="human3" className="flow-3-human3" />
+          <img src={human4} alt="human4" className="flow-3-human4" />
+          <img src={human5} alt="human5" className="flow-3-human5" />
         </div>
       </div>
     </div>
