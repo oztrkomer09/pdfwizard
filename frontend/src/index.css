@@ -167,30 +167,33 @@ main {
 /* ---------------------------------- information section ---------------------------------- */
 
 .information-section-wrapper {
-  width: calc(100% - 320px);
+  width: calc(100%);
   height: 100%;
-  padding: 80px 160px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.information-section-wrapper .info-section-title {
+.info-section-title {
   text-align: center;
   font-size: 48px;
   font-weight: 600;
   color: #252d5b;
   margin: 0;
-  padding: 0;
+  padding: 140px 0 0 0;
+  width: 100%;
+  background-color: #c0c2cc;
 }
 
-.information-section-wrapper .solution-cards {
+.solution-cards {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
-  width: 100%;
+
   justify-content: space-between;
+  width: calc(100% - 320px);
+  padding: 40px 160px 160px 160px;
+  background-color: #c0c2cc;
 }
 
 .solution-card {
@@ -214,7 +217,8 @@ main {
 }
 
 .flow-section {
-  width: 100%;
+  width: calc(100% - 320px);
+  padding: 0 160px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -239,11 +243,15 @@ main {
   margin-right: 162px;
 }
 
-.flow-1-left-rectangle {
+.flow-1-bg {
+  width: 500px;
+  height: 460px;
   position: absolute;
   bottom: 0;
   left: 0;
   z-index: -1;
+  background-color: #050c34;
+  border-radius: 8px;
 }
 
 .flow-1-right {
@@ -296,7 +304,8 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
+  width: calc(100% - 320px);
+  padding: 0 160px;
   margin: 165px auto 0 auto;
   text-align: center;
   row-gap: 20px;
@@ -319,7 +328,8 @@ main {
 /***** flow 3 *****/
 
 .flow-3 {
-  width: 100%;
+  width: calc(100% - 320px);
+  padding: 0 160px;
   height: 290px;
   position: relative;
   background-color: #252d5b;
@@ -389,7 +399,7 @@ main {
 }
 
 .flow-4-bg {
-  width: 547px;
+  width: 100%;
   height: 378px;
   background-color: #6c73a8;
   border-radius: 32px;
@@ -404,7 +414,7 @@ main {
   position: absolute;
   z-index: 2;
   top: 0;
-  right: 7px;
+  right: 0;
 }
 
 /* ---------------------------------- end of the information section ---------------------------------- */

@@ -5,7 +5,6 @@ import human3 from "../../assets/images/human3.png";
 import human4 from "../../assets/images/human4.png";
 import human5 from "../../assets/images/human5.png";
 import human6 from "../../assets/images/human6.png";
-import rectangle345 from "../../assets/images/rectangle_345.png";
 import GetStartedButton from "../shared/GetStartedButton";
 
 const Information = () => {
@@ -32,11 +31,7 @@ const Information = () => {
         <div className="flow-1">
           <div className="flow-1-left">
             <img src={human2} alt="human2" className="flow-1-left-human" />
-            <img
-              src={rectangle345}
-              alt="rectangle345"
-              className="flow-1-left-rectangle"
-            />
+            <div className="flow-1-bg"></div>
           </div>
           <div className="flow-1-right">
             <p className="flow-1-right-title">
