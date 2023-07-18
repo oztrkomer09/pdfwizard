@@ -2,6 +2,7 @@ import React from "react";
 import SolutionCard from "../shared/SolutionCard";
 import human2 from "../../assets/images/human2.png";
 import rectangle345 from "../../assets/images/rectangle_345.png";
+import GetStartedButton from "../shared/GetStartedButton";
 
 const Information = () => {
   return (
@@ -34,15 +35,26 @@ const Information = () => {
             />
           </div>
           <div className="flow-1-right">
-            <h2 className="flow-1-right-title">
+            <p className="flow-1-right-title">
               Build with only one link easily
-            </h2>
+            </p>
             <p className="flow-1-right-info">
               You can build a CV with only one link with the information on the
               business platforms of yourself or the person whose CV you want to
               view.
             </p>
+            <GetStartedButton />
           </div>
+        </div>
+        <div className="flow-2">
+          <p className="flow-2-title">
+            Reflect yourself with customized templates
+          </p>
+          <p className="flow-2-info">
+            You can come up with one among the job applications that find the
+            most suitable templates.
+          </p>
+          <GetStartedButton />
         </div>
       </div>
     </div>

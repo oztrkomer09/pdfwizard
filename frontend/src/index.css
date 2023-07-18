@@ -224,6 +224,8 @@ main {
   background-position: 0px 120px;
 }
 
+/***** flow 1 *****/
+
 .flow-section .flow-1 {
   display: flex;
   align-items: center;
@@ -250,17 +252,68 @@ main {
   row-gap: 20px;
 }
 
-.flow-1-right h2 {
+.flow-1-right-title {
   color: #252d5b;
   margin: 0;
   font-size: 28px;
   font-weight: 700;
 }
 
-.flow-1-right p {
+.flow-1-right-info {
   color: #6c73a8;
   font-weight: 500;
   font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.get-started {
+  all: unset;
+  width: 223px;
+  height: 48px;
+  background-color: #18235c;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.2s all;
+}
+
+.get-started:hover {
+  background-color: #0a1551;
+}
+
+.get-started:active {
+  transform: scale(0.99);
+}
+
+/***** flow 2 *****/
+
+.flow-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 165px auto 0 auto;
+  text-align: center;
+  row-gap: 20px;
+}
+
+.flow-2-title {
+  color: #252d5b;
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.flow-2-info {
+  color: #6c73a8;
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 12px;
 }
 
 /* ---------------------------------- end of the information section ---------------------------------- */
