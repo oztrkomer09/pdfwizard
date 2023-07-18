@@ -4,7 +4,7 @@ import human2 from "../../assets/images/human2.png";
 import human3 from "../../assets/images/human3.png";
 import human4 from "../../assets/images/human4.png";
 import human5 from "../../assets/images/human5.png";
-
+import human6 from "../../assets/images/human6.png";
 import rectangle345 from "../../assets/images/rectangle_345.png";
 import GetStartedButton from "../shared/GetStartedButton";
 
@@ -64,6 +64,23 @@ const Information = () => {
           <img src={human3} alt="human3" className="flow-3-human3" />
           <img src={human4} alt="human4" className="flow-3-human4" />
           <img src={human5} alt="human5" className="flow-3-human5" />
+        </div>
+        <div className="flow-4">
+          <div className="flow-4-left">
+            <p className="flow-4-title">
+              Download in a single click and use everywhere
+            </p>
+            <p className="flow-4-info">
+              You can get the CV you have just by clicking a button, without any
+              additional processing, and use it on online or offline platforms.
+            </p>
+            <GetStartedButton />
+          </div>
+          <div className="flow-4-right">
+            <img src={human6} alt="human6" className="flow-4-right-human6" />
+            <div className="flow-4-bg"></div>
+            <div className="flow-4-a4"></div>
+          </div>
         </div>
       </div>
     </div>
