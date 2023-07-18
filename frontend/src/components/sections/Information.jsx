@@ -30,6 +30,8 @@ const Information = () => {
       <div className="flow-section">
         <div className="flow-1">
           <div className="flow-1-left">
+            <div className="flow-1-a4-first"></div>
+            <div className="flow-1-a4-second"></div>
             <img src={human2} alt="human2" className="flow-1-left-human" />
             <div className="flow-1-bg"></div>
           </div>
@@ -56,6 +58,7 @@ const Information = () => {
           <GetStartedButton />
         </div>
         <div className="flow-3">
+          <div className="flow-3-a4"></div>
           <img src={human3} alt="human3" className="flow-3-human3" />
           <img src={human4} alt="human4" className="flow-3-human4" />
           <img src={human5} alt="human5" className="flow-3-human5" />
