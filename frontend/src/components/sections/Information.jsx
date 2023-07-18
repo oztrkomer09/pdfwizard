@@ -9,75 +9,78 @@ import GetStartedButton from "../shared/GetStartedButton";
 
 const Information = () => {
   return (
-    <div className="information-section-wrapper">
-      <p className="info-section-title">Solutions of the perfect CV</p>
-      {/* Solution Cards */}
-      <div className="solution-cards">
-        <SolutionCard
-          title="Build CVs easily"
-          info="Turn you profile into a CV in a single click."
-        />
-        <SolutionCard
-          title="Templates for everyone"
-          info="Choose the most suitable template."
-        />
-        <SolutionCard
-          title="Download and use offline"
-          info="You can simply download your CV with a button."
-        />
-      </div>
-      {/* Flow Section */}
-      <div className="flow-section">
-        <div className="flow-1">
-          <div className="flow-1-left">
-            <div className="flow-1-a4-first"></div>
-            <div className="flow-1-a4-second"></div>
-            <img src={human2} alt="human2" className="flow-1-left-human" />
-            <div className="flow-1-bg"></div>
+    <div>
+      <div className="information-section-wrapper">
+        <p className="info-section-title">Solutions of the perfect CV</p>
+        {/* Solution Cards */}
+        <div className="solution-cards">
+          <SolutionCard
+            title="Build CVs easily"
+            info="Turn you profile into a CV in a single click."
+          />
+          <SolutionCard
+            title="Templates for everyone"
+            info="Choose the most suitable template."
+          />
+          <SolutionCard
+            title="Download and use offline"
+            info="You can simply download your CV with a button."
+          />
+        </div>
+        {/* Flow Section */}
+        <div className="flow-section">
+          <div className="flow-1">
+            <div className="flow-1-left">
+              <div className="flow-1-a4-first"></div>
+              <div className="flow-1-a4-second"></div>
+              <img src={human2} alt="human2" className="flow-1-left-human" />
+              <div className="flow-1-bg"></div>
+            </div>
+            <div className="flow-1-right">
+              <p className="flow-1-right-title">
+                Build with only one link easily
+              </p>
+              <p className="flow-1-right-info">
+                You can build a CV with only one link with the information on
+                the business platforms of yourself or the person whose CV you
+                want to view.
+              </p>
+              <GetStartedButton />
+            </div>
           </div>
-          <div className="flow-1-right">
-            <p className="flow-1-right-title">
-              Build with only one link easily
+          <div className="flow-2">
+            <p className="flow-2-title">
+              Reflect yourself with customized templates
             </p>
-            <p className="flow-1-right-info">
-              You can build a CV with only one link with the information on the
-              business platforms of yourself or the person whose CV you want to
-              view.
+            <p className="flow-2-info">
+              You can come up with one among the job applications that find the
+              most suitable templates.
             </p>
             <GetStartedButton />
           </div>
-        </div>
-        <div className="flow-2">
-          <p className="flow-2-title">
-            Reflect yourself with customized templates
-          </p>
-          <p className="flow-2-info">
-            You can come up with one among the job applications that find the
-            most suitable templates.
-          </p>
-          <GetStartedButton />
-        </div>
-        <div className="flow-3">
-          <div className="flow-3-a4"></div>
-          <img src={human3} alt="human3" className="flow-3-human3" />
-          <img src={human4} alt="human4" className="flow-3-human4" />
-          <img src={human5} alt="human5" className="flow-3-human5" />
-        </div>
-        <div className="flow-4">
-          <div className="flow-4-left">
-            <p className="flow-4-title">
-              Download in a single click and use everywhere
-            </p>
-            <p className="flow-4-info">
-              You can get the CV you have just by clicking a button, without any
-              additional processing, and use it on online or offline platforms.
-            </p>
-            <GetStartedButton />
+          <div className="flow-3">
+            <div className="flow-3-a4"></div>
+            <img src={human3} alt="human3" className="flow-3-human3" />
+            <img src={human4} alt="human4" className="flow-3-human4" />
+            <img src={human5} alt="human5" className="flow-3-human5" />
           </div>
-          <div className="flow-4-right">
-            <img src={human6} alt="human6" className="flow-4-right-human6" />
-            <div className="flow-4-bg"></div>
-            <div className="flow-4-a4"></div>
+          <div className="flow-4">
+            <div className="flow-4-left">
+              <p className="flow-4-title">
+                Download in a single click and use everywhere
+              </p>
+              <p className="flow-4-info">
+                You can get the CV you have just by clicking a button, without
+                any additional processing, and use it on online or offline
+                platforms.
+              </p>
+              <GetStartedButton />
+            </div>
+            <div className="flow-4-right">
+              <img src={human6} alt="human6" className="flow-4-right-human6" />
+              <div className="flow-4-bg"></div>
+              <div className="flow-4-a4"></div>
+            </div>
           </div>
         </div>
       </div>
