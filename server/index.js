@@ -1,18 +1,23 @@
 import express from 'express';
 import runLinkedInScraper from './scraper.js';
 import fs from 'fs';
+import cors from 'cors';
 
 const app = express();
 const port = 3000;
 
+
+
 app.use(express.json());
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
-  res.setHeader('Access-Control-Allow-Methods', 'Content-Type', 'Authorization');
-  next();
-})
+app.use(cors())
+
+// app.use((req, res, next) => {
+//   res.setHeader('Access-Control-Allow-Origin', '*');
+//   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,PUT,PATCH,DELETE');
+//   res.setHeader('Access-Control-Allow-Methods', 'Content-Type', 'Authorization');
+//   next();
+// })
 
 app.post('/scrape', async (req, res) => {
   const { url } = req.body;
