@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import LinkInput from "./components/sections/LinkInput";
 import Information from "./components/sections/Information";
 import Comments from "./components/sections/Comments";
+import BottomSlogan from "./components/sections/BottomSlogan";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <LinkInput />
       <Information />
       <Comments />
+      <BottomSlogan />
     </Layout>
   );
 }

@@ -21,22 +21,9 @@ const CommentSlider = () => {
     },
   ];
 
-  const [comment, setComment] = useState(comments[0]);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      if (comment === comments[0]) {
-        setComment(comments[1]);
-      } else {
-        setComment(comments[0]);
-      }
-    }, 1000);
-    return () => clearInterval(interval);
-  }, [comment]);
-
   return (
     <div className="comment-slider">
-      <CommentContent item={comment} />
+      <CommentContent item={comments[0]} />
     </div>
   );
 };
