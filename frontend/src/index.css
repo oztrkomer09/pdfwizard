@@ -605,19 +605,21 @@ main {
   filter: brightness(0) invert(1);
 }
 
+/* ---------------------------------- end of the bottom slogan section ---------------------------------- */
+
 /* ---------------------------------- footer ---------------------------------- */
 
 .footer-wrapper {
-  width: calc(100% - 320px);
-  padding: 50px 80px 0 80px;
-  height: 184px;
+  width: 100%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
+  background-color: #050c34;
 }
 
 .footer-section {
-  width: 100%;
+  width: calc(100% - 320px);
+  padding: 50px 80px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -633,14 +635,14 @@ main {
 .footer-left p {
   font-size: 32px;
   font-weight: 600;
-  color: #0a1551;
+  color: white;
   margin: 0;
 }
 
 .footer-right {
   display: flex;
   column-gap: 120px;
-  color: #777e90;
+  color: white;
 }
 
 .footer-about {
@@ -668,4 +670,8 @@ p {
 .footer-right p {
   font-size: 16px;
   font-weight: 700;
+}
+
+.white-logo {
+  filter: brightness(0) invert(1);
 }
