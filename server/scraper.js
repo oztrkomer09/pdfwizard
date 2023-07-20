@@ -11,7 +11,7 @@ const runLinkedInScraper = async (url) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: "new",
       executablePath: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
     });
     const page = await browser.newPage();

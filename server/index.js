@@ -3,7 +3,7 @@ import runLinkedInScraper from './scraper.js';
 import fs from 'fs';
 
 const app = express();
-const port = 3000;
+const port = 8800;
 
 app.use(express.json());
 

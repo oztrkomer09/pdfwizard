@@ -1,59 +1,75 @@
 {
-  "name": "Mustafa Şafak",
-  "title": "Jotform şirketinde Backend Developer",
-  "location": "Ankara, Türkiye",
-  "about": "",
+  "name": "Ömer Faruk Öztürk",
+  "title": "Frontend Developer Intern - Jotform",
+  "location": "Eskişehir, Türkiye",
+  "about": "An ambitious soft ware engineer who is highly motivated to achieve a high-bar of mastery in Web Development. Focusing on Frontend Development and eager to develop new skills related to Computer Science field, as well.",
   "experiences": [
     {
-      "title": "Back End Developer",
+      "title": "Frontend Developer Intern",
       "subtitle": "Jotform",
-      "startDate": "Haz 2022",
+      "startDate": "Haz 2023",
       "endDate": "Present",
       "location": "Ankara, Türkiye"
     },
     {
-      "title": "Yazılım Uzmanı",
-      "subtitle": "Mustea Yazılım",
-      "startDate": "Oca 2007",
-      "endDate": "Ağu 2017",
-      "location": ""
-    },
-    {
-      "title": "Yazılım Uzmanı",
-      "subtitle": "",
-      "startDate": "Şub 2012",
-      "endDate": "Eyl 2016",
-      "location": ""
-    },
-    {
-      "title": "Software Support Engineer",
-      "subtitle": "Sentim Bilişim Teknolojileri San. ve Tic. A.Ş.",
-      "startDate": "Eyl 2010",
-      "endDate": "May 2011",
-      "location": "Ankara, Türkiye"
+      "title": "Software Developer Intern",
+      "subtitle": "AVKAR Yazılım San. ve Tic. Ltd. Şti.",
+      "startDate": "Tem 2022",
+      "endDate": "Ağu 2022",
+      "location": "Eskişehir, Türkiye"
     }
   ],
   "educations": [
     {
-      "degree": "3,20",
-      "school": "Anadolu Üniversitesi",
-      "date": "2011 - 2016"
+      "degree": "Lisans Derecesi",
+      "school": "Eskişehir Teknik Üniversitesi",
+      "date": "2018 - 2023"
     },
     {
-      "degree": "Bilgisayar Programcılığı",
-      "school": "Kırıkkale Üniversitesi",
-      "date": "2007 - 2009"
+      "degree": "99,65",
+      "school": "Doğa Okulları",
+      "date": "2014 - 2018"
     }
   ],
-  "licensesAndCertifications": [],
-  "languages": [
+  "licensesAndCertifications": [
     {
-      "title": "Türkçe",
-      "issuingAuthority": "-"
+      "title": "React Basics",
+      "issuingAuthority": "Meta",
+      "date": "Kas 2022"
     },
+    {
+      "title": "HTML, CSS, and Javascript for Web Developers",
+      "issuingAuthority": "The Johns Hopkins University",
+      "date": "Eyl 2022"
+    },
+    {
+      "title": "Interactivity with JavaScript",
+      "issuingAuthority": "University of Michigan",
+      "date": "Eyl 2022"
+    },
+    {
+      "title": "Cambridge K.E.T exam",
+      "issuingAuthority": "Cambridge Assessment English",
+      "date": ""
+    },
+    {
+      "title": "T-MBA Certificate",
+      "issuingAuthority": "Pearson",
+      "date": ""
+    }
+  ],
+  "languages": [
     {
       "title": "İngilizce",
       "issuingAuthority": "Profesyonel çalışma yetkinliği"
+    },
+    {
+      "title": "Almanca",
+      "issuingAuthority": "Başlangıç düzeyinde yetkinlik"
+    },
+    {
+      "title": "Türkçe",
+      "issuingAuthority": "Ana dil veya ikinci dil yetkinliği"
     }
   ]
 }
