@@ -1,29 +1,59 @@
 {
-  "name": "Vishal Tandale",
-  "title": "Aspiring full stack web developer at Masai School",
-  "location": "Pune, Maharashtra, India",
+  "name": "Mustafa Şafak",
+  "title": "Jotform şirketinde Backend Developer",
+  "location": "Ankara, Türkiye",
   "about": "",
   "experiences": [
     {
-      "title": "Design Engineer",
-      "subtitle": "RECO STORAGE SYSTEMS PVT. LTD.",
-      "startDate": "Apr 2021",
-      "endDate": "Apr 2022",
-      "location": "Pune, Maharashtra, India"
+      "title": "Back End Developer",
+      "subtitle": "Jotform",
+      "startDate": "Haz 2022",
+      "endDate": "Present",
+      "location": "Ankara, Türkiye"
+    },
+    {
+      "title": "Yazılım Uzmanı",
+      "subtitle": "Mustea Yazılım",
+      "startDate": "Oca 2007",
+      "endDate": "Ağu 2017",
+      "location": ""
+    },
+    {
+      "title": "Yazılım Uzmanı",
+      "subtitle": "",
+      "startDate": "Şub 2012",
+      "endDate": "Eyl 2016",
+      "location": ""
+    },
+    {
+      "title": "Software Support Engineer",
+      "subtitle": "Sentim Bilişim Teknolojileri San. ve Tic. A.Ş.",
+      "startDate": "Eyl 2010",
+      "endDate": "May 2011",
+      "location": "Ankara, Türkiye"
     }
   ],
   "educations": [
     {
-      "degree": "",
-      "school": "Masai",
-      "date": "2022 - 2023"
+      "degree": "3,20",
+      "school": "Anadolu Üniversitesi",
+      "date": "2011 - 2016"
     },
     {
-      "degree": "Bachelor of Engineering - BE",
-      "school": "",
-      "date": "2018 - 2021"
+      "degree": "Bilgisayar Programcılığı",
+      "school": "Kırıkkale Üniversitesi",
+      "date": "2007 - 2009"
     }
   ],
   "licensesAndCertifications": [],
-  "languages": []
+  "languages": [
+    {
+      "title": "Türkçe",
+      "issuingAuthority": "-"
+    },
+    {
+      "title": "İngilizce",
+      "issuingAuthority": "Profesyonel çalışma yetkinliği"
+    }
+  ]
 }

@@ -7,8 +7,6 @@ const port = 3000;
 
 app.use(express.json());
 
-
-
 app.post('/scrape', async (req, res) => {
   const { url } = req.body;
 
@@ -17,6 +15,7 @@ app.post('/scrape', async (req, res) => {
 
     res.status(200).json({ message: 'Scraping completed successfully', data });
   } catch (error) {
+    console.error('Scraping error:', error);
     let errorMessage = 'An error occurred while scraping LinkedIn profile';
 
     if (error.message) {
@@ -26,6 +25,7 @@ app.post('/scrape', async (req, res) => {
     res.status(500).json({ error: errorMessage });
   }
 });
+
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
