@@ -4,7 +4,7 @@ import human1 from "../../assets/images/human1.png";
 import frame from "../../assets/images/empty_frame.png";
 import linkedIn from "../../assets/images/linkedIn.png";
 
-const LinkInput = () => {
+const LinkInput = ({ setLoading, loading }) => {
   return (
     <div className="link-section-wrapper">
       <div className="link-input-hero-section">
@@ -14,7 +14,7 @@ const LinkInput = () => {
             Copy the link of your profile, paste it in the URL part in the
             cvwizard and run. Finally, you can show your CV.
           </p>
-          <InputButtonComponent />
+          <InputButtonComponent setLoading={setLoading} loading={loading} />
         </div>
         <div className="link-input-right-section">
           <img src={frame} alt="frame" className="frame" />
