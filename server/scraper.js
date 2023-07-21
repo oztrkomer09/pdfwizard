@@ -7,11 +7,9 @@ const runLinkedInScraper = async (url) => {
     throw new Error('Please enter a valid LinkedIn profile URL');
   }
   
-  
-
   try {
     const browser = await puppeteer.launch({
-      headless: "new",
+      headless: true,
       executablePath: 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe',
     });
     const page = await browser.newPage();
