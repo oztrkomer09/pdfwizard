@@ -28,6 +28,8 @@ const InputButtonComponent = ({ setLoading, loading }) => {
 
       // İsteğin başarıyla tamamlanması durumunda buraya gelinir
       const data = response.data;
+      setLoading(false);
+      setUrl("");
       console.log(data);
     } catch (error) {
       if (error.code === "ERR_NETWORK") {
@@ -38,8 +40,6 @@ const InputButtonComponent = ({ setLoading, loading }) => {
         alert(error.response.data.error);
       }
     }
-    setLoading(false);
-    setUrl("");
   };
   return (
     <div className="link-input">
