@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios"; 
+import axios from "axios";
 import go from "../../assets/images/go.png";
 
 const InputButtonComponent = () => {
@@ -11,10 +11,10 @@ const InputButtonComponent = () => {
 
   const fetchUserData = async () => {
     try {
-      const response = await axios.post("/scrape", {
+      const response = await axios.post("http://localhost:8800/scrape", {
         url: url,
       });
-  
+
       // İsteğin başarıyla tamamlanması durumunda buraya gelinir
       const data = response.data;
       console.log(data);

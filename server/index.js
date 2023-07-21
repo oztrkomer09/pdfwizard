@@ -1,11 +1,14 @@
 import express from 'express';
 import runLinkedInScraper from './scraper.js';
+import cors from 'cors';
 import fs from 'fs';
 
 const app = express();
 const port = 8800;
 
 app.use(express.json());
+
+app.use(cors());
 
 app.post('/scrape', async (req, res) => {
   const { url } = req.body;
