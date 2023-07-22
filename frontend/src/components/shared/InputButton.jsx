@@ -38,6 +38,8 @@ const InputButtonComponent = ({ setLoading, loading }) => {
         }, 5000);
       } else {
         alert(error.response.data.error);
+        setLoading(false);
+        setUrl("");
       }
     }
   };

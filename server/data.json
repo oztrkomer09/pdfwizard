@@ -1,10 +1,75 @@
 {
-  "name": "Kaan Boyacı",
-  "title": "Backend Developer Intern",
-  "location": "İzmir, Turkey",
-  "about": "\"I'm Kaan, a passionate full-stack and backend web developer. I specialize in building scalable web applications and designing efficient server-side architecture.\n\nI have a strong command of programming languages such as JavaScript, PHP, and I'm proficient in frameworks like Node.js, React.js, Express.js and Laravel I enjoy collaborating with teams to deliver high-quality code and finding innovative solutions to complex problems.\n\nIf you're looking for a dedicated web developer who can bring your ideas to life and create impactful online experiences, I'd love to connect. Let's build something amazing together!\"",
-  "experiences": [],
-  "educations": [],
-  "licensesAndCertifications": [],
-  "languages": []
+  "name": "Ömer Faruk Öztürk",
+  "title": "Frontend Developer Intern - Jotform",
+  "location": "Eskişehir, Turkey",
+  "about": "An ambitious soft ware engineer who is highly motivated to achieve a high-bar of mastery in Web Development. Focusing on Frontend Development and eager to develop new skills related to Computer Science field, as well.",
+  "experiences": [
+    {
+      "title": "Frontend Developer Intern",
+      "subtitle": "Jotform",
+      "startDate": "Jun 2023",
+      "endDate": "Present",
+      "location": "Ankara, Türkiye"
+    },
+    {
+      "title": "Software Developer Intern",
+      "subtitle": "AVKAR Yazılım San. ve Tic. Ltd. Şti.",
+      "startDate": "Jul 2022",
+      "endDate": "Aug 2022",
+      "location": "Eskişehir, Türkiye"
+    }
+  ],
+  "educations": [
+    {
+      "degree": "Lisans Derecesi",
+      "school": "Eskişehir Teknik Üniversitesi",
+      "date": "2018 - 2023"
+    },
+    {
+      "degree": "99,65",
+      "school": "Doğa Okulları",
+      "date": "2014 - 2018"
+    }
+  ],
+  "licensesAndCertifications": [
+    {
+      "title": "React Basics",
+      "issuingAuthority": "Meta",
+      "date": "Nov 2022"
+    },
+    {
+      "title": "HTML, CSS, and Javascript for Web Developers",
+      "issuingAuthority": "The Johns Hopkins University",
+      "date": "Sep 2022"
+    },
+    {
+      "title": "Interactivity with JavaScript",
+      "issuingAuthority": "University of Michigan",
+      "date": "Sep 2022"
+    },
+    {
+      "title": "Cambridge K.E.T exam",
+      "issuingAuthority": "Cambridge Assessment English",
+      "date": ""
+    },
+    {
+      "title": "T-MBA Certificate",
+      "issuingAuthority": "Pearson",
+      "date": ""
+    }
+  ],
+  "languages": [
+    {
+      "title": "İngilizce",
+      "issuingAuthority": "Professional working proficiency"
+    },
+    {
+      "title": "Almanca",
+      "issuingAuthority": "Elementary proficiency"
+    },
+    {
+      "title": "Türkçe",
+      "issuingAuthority": "Native or bilingual proficiency"
+    }
+  ]
 }
