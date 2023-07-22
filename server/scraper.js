@@ -142,7 +142,7 @@ const runLinkedInScraper = async (url) => {
 
     return data;
   } catch (error) {
-    throw new Error("Cannot find this LinkedIn user's profile");
+    throw new Error(error);
   }
 };
 
