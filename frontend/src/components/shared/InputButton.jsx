@@ -22,9 +22,14 @@ const InputButtonComponent = ({ setLoading, loading }) => {
   const fetchUserData = async () => {
     setLoading(true);
     try {
-      const response = await axios.post("http://localhost:8800/scrape", {
-        url: url,
-      });
+      const response = await axios.post(
+        "http://localhost/jotform-api-php/createForm.php",
+        {
+          api_key: "72264ed8b8d9642cd583f204e686914d",
+          form_id: "232002297479054",
+          linkedin_url: url,
+        }
+      );
 
       // İsteğin başarıyla tamamlanması durumunda buraya gelinir
       const data = response.data;
@@ -32,15 +37,9 @@ const InputButtonComponent = ({ setLoading, loading }) => {
       setUrl("");
       console.log(data);
     } catch (error) {
-      if (error.code === "ERR_NETWORK") {
-        setTimeout(() => {
-          fetchUserData();
-        }, 5000);
-      } else {
-        alert(error.response.data.error);
-        setLoading(false);
-        setUrl("");
-      }
+      console.log(error);
+      setLoading(false);
+      setUrl("");
     }
   };
   return (
