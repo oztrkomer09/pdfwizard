@@ -2,10 +2,10 @@ import puppeteer from 'puppeteer';
 import fs from 'fs';
 
 const runLinkedInScraper = async (url) => {
-  const linkedInUrlPattern = /^https:\/\/(?:\w+\.)?linkedin\.com\/in\/[-\w%.]+\/?$/;
-  if (!linkedInUrlPattern.test(url)) {
-    throw new Error('Please enter a valid LinkedIn profile URL');
-  }
+  // const linkedInUrlPattern = /^https:\/\/(?:\w+\.)?linkedin\.com\/in\/[-\w%.]+\/?$/;
+  // if (!linkedInUrlPattern.test(url)) {
+  //   throw new Error('Please enter a valid LinkedIn profile URL');
+  // }
 
   try {
     const browser = await puppeteer.launch({
