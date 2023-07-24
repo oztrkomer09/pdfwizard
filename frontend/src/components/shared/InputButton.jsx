@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import go from "../../assets/images/go.png";
-import { useEffect } from "react";
 
 const InputButtonComponent = ({ setLoading, loading }) => {
   const [url, setUrl] = useState("");
@@ -17,25 +16,18 @@ const InputButtonComponent = ({ setLoading, loading }) => {
     }
   }, [url]);
 
+  useEffect(() => {
+    if (cloneId && scrape) {
+      scrapeData();
+    }
+  }, [cloneId, scrape]);
+
   const handleChange = (e) => {
     setUrl(e.target.value);
   };
 
-  const scrapeData = async (apiKey) => {
+  const scrapeData = async () => {
     try {
-      const response = await axios.post(
-        "http://localhost/jotform-api-php/createForm.php",
-        {
-          api_key: apiKey,
-          form_id: "232002297479054",
-          linkedin_url: url,
-        }
-      );
-
-      // İsteğin başarıyla tamamlanması durumunda buraya gelinir
-      const data = await response.data;
-      setCloneId(data.response.id);
-      setScrape(data.scraped_data);
       const response2 = await axios.post(
         "http://localhost/jotform-api-php/createSubmission.php",
         {
@@ -47,7 +39,6 @@ const InputButtonComponent = ({ setLoading, loading }) => {
 
       setLoading(false);
       setUrl("");
-      console.log(data);
       console.log(data2);
     } catch (error) {
       console.log(error);
@@ -57,19 +48,38 @@ const InputButtonComponent = ({ setLoading, loading }) => {
   };
 
   const cvWizard = async () => {
-    await JF.login(
-      async function success() {
-        var apiKey = await JF.getAPIKey();
-        scrapeData(apiKey);
-      },
+    try {
+      await JF.login(
+        async function success() {
+          var apiKey = await JF.getAPIKey();
 
-      function error() {
-        window.alert("Could not authorize user");
-      }
-    );
+          const response = await axios.post(
+            "http://localhost/jotform-api-php/createForm.php",
+            {
+              api_key: apiKey,
+              form_id: "232002297479054",
+              linkedin_url: url,
+            }
+          );
 
-    setLoading(true);
+          const data = await response.data;
+          setCloneId(data.response.id);
+          setScrape(data.scraped_data);
+
+          setLoading(true); 
+        },
+
+        function error() {
+          window.alert("Could not authorize user");
+        }
+      );
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
+      setUrl("");
+    }
   };
+
   return (
     <div className="link-input">
       <input
