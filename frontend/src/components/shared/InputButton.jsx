@@ -6,6 +6,8 @@ import { useEffect } from "react";
 const InputButtonComponent = ({ setLoading, loading }) => {
   const [url, setUrl] = useState("");
   const [disabled, setDisabled] = useState(true);
+  const [cloneId, setCloneId] = useState("");
+  const [scrape, setScrape] = useState();
 
   useEffect(() => {
     if (url.trim("").length > 0) {
@@ -31,12 +33,23 @@ const InputButtonComponent = ({ setLoading, loading }) => {
       );
 
       // İsteğin başarıyla tamamlanması durumunda buraya gelinir
-      const data = response.data;
+      const data = await response.data;
+      setCloneId(data.response.id);
+      setScrape(data.scraped_data);
+      const response2 = await axios.post(
+        "http://localhost/jotform-api-php/createSubmission.php",
+        {
+          cloned_form_id: cloneId,
+          scraped_data: scrape,
+        }
+      );
+      const data2 = await response2.data;
+
       setLoading(false);
       setUrl("");
       console.log(data);
-    }
-     catch (error) {
+      console.log(data2);
+    } catch (error) {
       console.log(error);
       setLoading(false);
       setUrl("");
@@ -65,7 +78,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
         type="text"
         placeholder="URL'yi yapıştırın ve işlemi başlatın"
       />
-      {/* TODO: button disable handling */}
+      <span onClick={() => console.log(scrape)}>Log</span>
       <button disabled={disabled} onClick={cvWizard}>
         <img src={go} alt="Git" />
       </button>
