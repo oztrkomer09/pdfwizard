@@ -3,6 +3,7 @@ import axios from "axios";
 import go from "../../assets/images/go.png";
 
 const InputButtonComponent = ({ setLoading, loading }) => {
+  const API = "30774faf5b15f5bd1210d7c4d1b20e52";
   const [url, setUrl] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [cloneId, setCloneId] = useState("");
@@ -33,6 +34,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
         {
           cloned_form_id: cloneId,
           scraped_data: scrape,
+          apiKey: API,
         }
       );
       const data2 = await response2.data;
@@ -51,6 +53,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
     try {
       await JF.login(
         async function success() {
+          setLoading(true);
           var apiKey = await JF.getAPIKey();
 
           const response = await axios.post(
@@ -65,8 +68,6 @@ const InputButtonComponent = ({ setLoading, loading }) => {
           const data = await response.data;
           setCloneId(data.response.id);
           setScrape(data.scraped_data);
-
-          setLoading(true); 
         },
 
         function error() {
@@ -88,7 +89,6 @@ const InputButtonComponent = ({ setLoading, loading }) => {
         type="text"
         placeholder="URL'yi yapıştırın ve işlemi başlatın"
       />
-      <span onClick={() => console.log(scrape)}>Log</span>
       <button disabled={disabled} onClick={cvWizard}>
         <img src={go} alt="Git" />
       </button>
