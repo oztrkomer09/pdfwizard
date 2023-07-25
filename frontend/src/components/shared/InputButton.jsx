@@ -38,10 +38,8 @@ const InputButtonComponent = ({ setLoading, loading }) => {
         }
       );
       const data2 = await response2.data;
-
       setLoading(false);
       setUrl("");
-      console.log(data2);
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -50,12 +48,12 @@ const InputButtonComponent = ({ setLoading, loading }) => {
   };
 
   const cvWizard = async () => {
-    try {
-      await JF.login(
-        async function success() {
-          setLoading(true);
-          var apiKey = await JF.getAPIKey();
+    await JF.login(
+      async function success() {
+        setLoading(true);
+        var apiKey = await JF.getAPIKey();
 
+        try {
           const response = await axios.post(
             "http://localhost/jotform-api-php/createForm.php",
             {
@@ -65,20 +63,24 @@ const InputButtonComponent = ({ setLoading, loading }) => {
             }
           );
 
-          const data = await response.data;
-          setCloneId(data.response.id);
-          setScrape(data.scraped_data);
-        },
+          const data = response.data || {};
+          const { response: dataResponse = {}, scraped_data } = data;
 
-        function error() {
-          window.alert("Could not authorize user");
+          setCloneId(dataResponse.id);
+          setScrape(scraped_data);
+        } catch (error) {
+          console.log(error);
+          setLoading(false);
+          setUrl("");
         }
-      );
-    } catch (error) {
-      console.log(error);
-      setLoading(false);
-      setUrl("");
-    }
+      },
+
+      function error() {
+        window.alert("Could not authorize user");
+        setLoading(false);
+        setUrl("");
+      }
+    );
   };
 
   return (
