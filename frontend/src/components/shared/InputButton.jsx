@@ -19,7 +19,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
 
   useEffect(() => {
     if (cloneId && scrape) {
-      scrapeData();
+      sendSubmission();
     }
   }, [cloneId, scrape]);
 
@@ -27,7 +27,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
     setUrl(e.target.value);
   };
 
-  const scrapeData = async () => {
+  const sendSubmission = async () => {
     try {
       const response2 = await axios.post(
         "http://localhost/jotform-api-php/createSubmission.php",
