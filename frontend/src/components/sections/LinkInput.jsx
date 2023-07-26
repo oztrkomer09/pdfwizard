@@ -1,8 +1,9 @@
 import React from "react";
 import InputButtonComponent from "../shared/InputButton";
 import human1 from "../../assets/images/human1.png";
-import frame from "../../assets/images/empty_frame.png";
 import linkedIn from "../../assets/images/linkedIn.png";
+import yenibiris from "../../assets/images/yenibiris.png";
+import kariyer from "../../assets/images/kariyer.png";
 
 const LinkInput = ({ setLoading, loading }) => {
   return (
@@ -17,13 +18,16 @@ const LinkInput = ({ setLoading, loading }) => {
           <InputButtonComponent setLoading={setLoading} loading={loading} />
         </div>
         <div className="link-input-right-section">
-          <img src={frame} alt="frame" className="frame" />
           <img src={human1} alt="human1" className="human1" />
         </div>
       </div>
       <div className="link-section-bottom-bar">
         <p>We're Supporting</p>
-        <img src={linkedIn} alt="linkedIn" />
+        <div className="link-section-bottom-bar-brands">
+          <img src={yenibiris} alt="yenibiris" />
+          <img src={kariyer} alt="kariyer" />
+          <img src={linkedIn} alt="linkedIn" />
+        </div>
       </div>
     </div>
   );
