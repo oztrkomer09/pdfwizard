@@ -37,7 +37,6 @@ const InputButtonComponent = ({ setLoading, loading }) => {
           apiKey: API,
         }
       );
-      const data2 = await response2.data;
       setLoading(false);
       setUrl("");
     } catch (error) {
@@ -50,6 +49,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
   const cvWizard = async () => {
     await JF.login(
       async function success() {
+        setDisabled(true);
         setLoading(true);
         var apiKey = await JF.getAPIKey();
 
@@ -58,7 +58,7 @@ const InputButtonComponent = ({ setLoading, loading }) => {
             "http://localhost/jotform-api-php/createForm.php",
             {
               api_key: apiKey,
-              form_id: "232002297479054",
+              form_id: "232062121530034",
               linkedin_url: url,
             }
           );
