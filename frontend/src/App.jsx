@@ -5,15 +5,18 @@ import Information from "./components/sections/Information";
 import Comments from "./components/sections/Comments";
 import BottomSlogan from "./components/sections/BottomSlogan";
 import Loading from "./components/shared/Loading";
+import Modal from "./components/shared/Modal";
 
 import { useState } from "react";
+import { useCvContext } from "./context/Context";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  const { loading, isModalOpen } = useCvContext();
   return (
     <Layout>
       {loading && <Loading />}
-      <LinkInput setLoading={setLoading} loading={loading} />
+      {isModalOpen && <Modal />}
+      <LinkInput />
       <Information />
       <Comments />
       <BottomSlogan />

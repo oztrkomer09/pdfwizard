@@ -3,7 +3,6 @@ import SolutionCard from "../shared/SolutionCard";
 import human3 from "../../assets/images/human3.png";
 import human4 from "../../assets/images/human4.png";
 import human5 from "../../assets/images/human5.png";
-import human6 from "../../assets/images/human6.png";
 import GetStartedButton from "../shared/GetStartedButton";
 import solution1 from "../../assets/images/solution1.png";
 import solution3 from "../../assets/images/solution3.png";

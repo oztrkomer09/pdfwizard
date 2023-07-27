@@ -160,10 +160,6 @@ main {
   font-weight: 600;
 }
 
-.link-section-bottom-bar-brands {
-  display: flex;
-  column-gap: 40px;
-}
 /* ---------------------------------- end of the link input section ---------------------------------- */
 
 /* ---------------------------------- information section ---------------------------------- */
@@ -654,4 +650,100 @@ p {
   10% {
     transform: translate(0px, 0px);
   }
+}
+
+/* ---------------------------------- end of the loading spinner ---------------------------------- */
+
+/* ---------------------------------- modal ---------------------------------- */
+
+.modal {
+  width: calc(100% - 100px);
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #050c3448;
+  z-index: 9999;
+  padding: 50px;
+
+  overflow: scroll;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
+}
+
+.modal-content {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding-bottom: 98px;
+  margin-bottom: 70px;
+}
+
+.modal .close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 24px;
+  height: 24px;
+  font-size: 40px;
+  color: #0a1551;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.modal .close:hover {
+  color: #435dee;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #091141;
+  margin-top: 40px;
+}
+
+.modal-info {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6c73a8;
+  margin-top: 8px;
+  margin-bottom: 26px;
+}
+
+.modal-templates {
+  display: flex;
+  column-gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.modal-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.template-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #0a1551;
+  margin-top: 16px;
+}
+
+.modal-template:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 20px 30px 0px rgba(173, 173, 173, 1);
 }

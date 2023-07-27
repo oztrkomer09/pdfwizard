@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import go from "../../assets/images/go.png";
+import { useCvContext } from "../../context/Context";
 
-const InputButtonComponent = ({ setLoading, loading }) => {
-  const API = "30774faf5b15f5bd1210d7c4d1b20e52";
-  const [url, setUrl] = useState("");
-  const [disabled, setDisabled] = useState(true);
-  const [cloneId, setCloneId] = useState("");
-  const [scrape, setScrape] = useState();
+const InputButtonComponent = () => {
+  const {
+    API,
+    url,
+    setUrl,
+    disabled,
+    setDisabled,
+    cloneId,
+    setCloneId,
+    scrape,
+    setScrape,
+  } = useCvContext();
 
   useEffect(() => {
     if (url.trim("").length > 0) {
