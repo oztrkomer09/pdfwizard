@@ -1,6 +1,7 @@
 import React from "react";
 import template1 from "../../assets/images/template1.png";
 import template2 from "../../assets/images/template2.png";
+import ModalTemplate from "../shared/ModalTemplate";
 import { useCvContext } from "../../context/Context";
 
 const Modal = () => {
@@ -20,18 +21,9 @@ const Modal = () => {
           Explore the most suitable templates to create CV in minutes
         </p>
         <div className="modal-templates">
-          <div className="modal-template">
-            <img src={template1} alt="template1" />
-            <p className="template-title">Classical</p>
-          </div>
-          <div className="modal-template">
-            <img src={template2} alt="template2" />
-            <p className="template-title">Official</p>
-          </div>
-          <div className="modal-template">
-            <img src={template1} alt="template1" />
-            <p className="template-title">Creative</p>
-          </div>
+          <ModalTemplate template={template1} />
+          <ModalTemplate template={template2} />
+          <ModalTemplate template={template1} />
         </div>
       </div>
     </div>
