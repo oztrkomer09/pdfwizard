@@ -1,4 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
+import axios from "axios";
 
 const cvContext = createContext();
 
@@ -7,6 +8,7 @@ export const CvProvider = ({ children }) => {
   const [isModalOpen, setIsModalOpen] = useState(true);
 
   const API = "30774faf5b15f5bd1210d7c4d1b20e52";
+  const templateID = "10232062469471053";
   const [url, setUrl] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [cloneId, setCloneId] = useState("");
@@ -31,8 +33,9 @@ export const CvProvider = ({ children }) => {
   };
 
   const sendSubmission = async () => {
+    await cloneTemplate();
     try {
-      const response2 = await axios.post(
+      await axios.post(
         "http://localhost/jotform-api-php/createSubmission.php",
         {
           cloned_form_id: cloneId,
@@ -47,6 +50,13 @@ export const CvProvider = ({ children }) => {
       setLoading(false);
       setUrl("");
     }
+  };
+
+  const cloneTemplate = async () => {
+    const response = await axios.get(
+      `https://api.jotform.com/pdf/${templateID}/clone?formID=${cloneId}&apiKey=${API}`
+    );
+    console.log(response);
   };
 
   const cvWizard = async () => {
@@ -68,7 +78,6 @@ export const CvProvider = ({ children }) => {
 
           const data = response.data || {};
           const { response: dataResponse = {}, scraped_data } = data;
-
           setCloneId(dataResponse.id);
           setScrape(scraped_data);
         } catch (error) {

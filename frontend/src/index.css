@@ -400,6 +400,8 @@ main {
 
 .flow-4-right img {
   z-index: 3;
+  width: 560px;
+  height: 544px;
 }
 
 /* ---------------------------------- end of the information section ---------------------------------- */
@@ -702,7 +704,7 @@ p {
 }
 
 .modal .close:hover {
-  color: #435dee;
+  color: #6c73a8;
 }
 
 .modal-title {

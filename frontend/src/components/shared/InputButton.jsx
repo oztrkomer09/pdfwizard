@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 import go from "../../assets/images/go.png";
 import { useCvContext } from "../../context/Context";
 
