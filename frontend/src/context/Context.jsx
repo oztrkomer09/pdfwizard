@@ -5,10 +5,10 @@ const cvContext = createContext();
 
 export const CvProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const API = "30774faf5b15f5bd1210d7c4d1b20e52";
-  const templateID = "10232062469471053";
+  const [templateID, setTemplateID] = useState("");
   const [url, setUrl] = useState("");
   const [disabled, setDisabled] = useState(true);
   const [cloneId, setCloneId] = useState("");
@@ -43,8 +43,10 @@ export const CvProvider = ({ children }) => {
           apiKey: API,
         }
       );
+
       setLoading(false);
       setUrl("");
+      window.open(`https://www.jotform.com/pdf-editor/${cloneId}`, "_blank");
     } catch (error) {
       console.log(error);
       setLoading(false);
@@ -56,7 +58,6 @@ export const CvProvider = ({ children }) => {
     const response = await axios.get(
       `https://api.jotform.com/pdf/${templateID}/clone?formID=${cloneId}&apiKey=${API}`
     );
-    console.log(response);
   };
 
   const cvWizard = async () => {
@@ -95,15 +96,31 @@ export const CvProvider = ({ children }) => {
     );
   };
 
+  const chooseTemplateAndRun = (tempID) => {
+    setTemplateID(tempID);
+    setIsModalOpen(false);
+    cvWizard();
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
   const data = {
     loading,
     isModalOpen,
-    setIsModalOpen,
     API,
     url,
     disabled,
     cvWizard,
     handleChange,
+    chooseTemplateAndRun,
+    closeModal,
+    openModal,
   };
 
   return <cvContext.Provider value={data}>{children}</cvContext.Provider>;

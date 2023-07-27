@@ -5,10 +5,7 @@ import ModalTemplate from "../shared/ModalTemplate";
 import { useCvContext } from "../../context/Context";
 
 const Modal = () => {
-  const { setIsModalOpen } = useCvContext();
-  const closeModal = () => {
-    setIsModalOpen(false);
-  };
+  const { closeModal } = useCvContext();
 
   return (
     <div className="modal">
@@ -21,7 +18,7 @@ const Modal = () => {
           Explore the most suitable templates to create CV in minutes
         </p>
         <div className="modal-templates">
-          <ModalTemplate template={template1} />
+          <ModalTemplate template={template1} tempID="10232062469471053" />
           <ModalTemplate template={template2} />
           <ModalTemplate template={template1} />
         </div>
