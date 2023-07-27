@@ -1,8 +1,10 @@
 import React from "react";
 import template1 from "../../assets/images/template1.png";
 import template2 from "../../assets/images/template2.png";
+import { useCvContext } from "../../context/Context";
 
-const Modal = ({ setIsModalOpen }) => {
+const Modal = () => {
+  const { setIsModalOpen } = useCvContext();
   const closeModal = () => {
     setIsModalOpen(false);
   };
