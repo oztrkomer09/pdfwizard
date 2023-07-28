@@ -19,8 +19,8 @@ const Modal = () => {
         </p>
         <div className="modal-templates">
           <ModalTemplate template={template1} tempID="10232062469471053" />
-          <ModalTemplate template={template2} />
-          <ModalTemplate template={template1} />
+          <ModalTemplate template={template2} tempID="10232073123524041" />
+          <ModalTemplate template={template1} tempID="10232072143564046" />
         </div>
       </div>
     </div>
