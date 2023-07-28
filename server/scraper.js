@@ -23,7 +23,7 @@ const runLinkedInScraper = async (url) => {
     ];
 
     await Promise.all(
-      requiredSelectors.map((selector) => page.waitForSelector(selector, { timeout: 5000 }))
+      requiredSelectors.map((selector) => page.waitForSelector(selector, { timeout: 10000 }))
     );
 
     const data = await page.evaluate(() => {
@@ -74,6 +74,7 @@ const runLinkedInScraper = async (url) => {
           location
         };
       });
+      const last10Experiences = experiences.slice(-10);
 
       const educations = educationItems.map(item => {
         const degreeElement = item.querySelector('span.education__item--degree-info');
@@ -91,6 +92,7 @@ const runLinkedInScraper = async (url) => {
           date
         };
       });
+      const last10Educations = educations.slice(-10);
 
       const licensesAndCertifications = licenseCertificationItems.map(item => {
         const titleElement = item.querySelector('h3.profile-section-card__title a');
@@ -109,6 +111,7 @@ const runLinkedInScraper = async (url) => {
           date
         };
       });
+      const last10LicensesAndCertifications = licensesAndCertifications.slice(-10);
 
       const languages = languagesItems.map(item => {
         const titleElement = item.querySelector('h3.profile-section-card__title');
@@ -122,16 +125,17 @@ const runLinkedInScraper = async (url) => {
           issuingAuthority
         };
       });
+      const last10Languages = languages.slice(-10);
 
       return {
         name,
         title,
         location,
         about,
-        experiences,
-        educations,
-        licensesAndCertifications,
-        languages
+        experiences: last10Experiences,
+        educations: last10Educations,
+        licensesAndCertifications: last10LicensesAndCertifications,
+        languages: last10Languages
       };
     });
 
