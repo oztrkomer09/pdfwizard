@@ -20,6 +20,8 @@ const runLinkedInScraper = async (url) => {
       'h1',
       'h1.top-card-layout__title',
       'div.core-section-container__content',
+     ' h3.profile-section-card__title',
+     'span.education__item--degree-info'
     ];
 
     await Promise.all(
