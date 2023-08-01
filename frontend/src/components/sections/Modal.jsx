@@ -1,6 +1,7 @@
 import React from "react";
 import template1 from "../../assets/images/template1.png";
 import template2 from "../../assets/images/template2.png";
+import template3 from "../../assets/images/template3.png";
 import ModalTemplate from "../shared/ModalTemplate";
 import { useCvContext } from "../../context/Context";
 
@@ -20,7 +21,7 @@ const Modal = () => {
         <div className="modal-templates">
           <ModalTemplate template={template1} tempID="10232062469471053" />
           <ModalTemplate template={template2} tempID="10232073123524041" />
-          <ModalTemplate template={template1} tempID="10232072143564046" />
+          <ModalTemplate template={template3} tempID="10232072143564046" />
         </div>
       </div>
     </div>
