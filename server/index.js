@@ -8,7 +8,7 @@ const port = 8800;
 app.use(express.json());
 app.use(cors());
 
-const MAX_RETRIES = 5; // Maximum number of retry attempts
+const MAX_RETRIES = 3; // Maximum number of retry attempts
 
 const scrapeWithRetry = async (url) => {
   for (let retries = 0; retries < MAX_RETRIES; retries++) {
