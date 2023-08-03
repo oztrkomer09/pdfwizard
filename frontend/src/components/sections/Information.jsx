@@ -1,13 +1,12 @@
 import React from "react";
 import SolutionCard from "../shared/SolutionCard";
-import human3 from "../../assets/images/human3.png";
-import human4 from "../../assets/images/human4.png";
-import human5 from "../../assets/images/human5.png";
 import GetStartedButton from "../shared/GetStartedButton";
 import solution1 from "../../assets/images/solution1.png";
 import solution3 from "../../assets/images/solution3.png";
 import flowad1 from "../../assets/images/flowad1.png";
 import flowad3 from "../../assets/images/flowad3.png";
+import TemplateSlider from "../shared/TemplateSlider";
+import HumanSlider from "../shared/HumanSlider";
 
 const Information = () => {
   return (
@@ -22,7 +21,6 @@ const Information = () => {
             info="Turn you profile into a CV in a single click."
           />
           <SolutionCard
-            img={solution1}
             title="Templates for everyone"
             info="Choose the most suitable template."
           />
@@ -61,10 +59,11 @@ const Information = () => {
             <GetStartedButton />
           </div>
           <div className="flow-3">
-            <div className="flow-3-a4"></div>
-            <img src={human3} alt="human3" className="flow-3-human3" />
-            <img src={human4} alt="human4" className="flow-3-human4" />
-            <img src={human5} alt="human5" className="flow-3-human5" />
+            <div className="flow-3-a4">
+              <TemplateSlider />
+            </div>
+
+            <HumanSlider />
           </div>
           <div className="flow-4">
             <div className="flow-4-left">

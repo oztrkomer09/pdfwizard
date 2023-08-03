@@ -213,6 +213,20 @@ main {
   font-size: 14px;
 }
 
+.solution-template-slider-wrapper {
+  background-color: #454e80;
+  padding: 20px 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.solution-template-slider {
+  max-width: 228px;
+  max-height: 320px;
+}
+
 .flow-section {
   width: calc(100% - 320px);
   padding: 0 160px;
@@ -321,23 +335,22 @@ main {
 /***** flow 3 *****/
 
 .flow-3 {
-  width: calc(100% - 320px);
-  padding: 0 160px;
+  width: calc(100%);
   height: 290px;
   position: relative;
   background-color: #0a1551;
   border-radius: 32px;
   margin-top: 200px;
+  display: flex;
 }
 
 .flow-3-a4 {
-  background-color: #8594e5;
-  width: 240px;
-  height: 323px;
+  width: 300px;
+  height: 425px;
   position: absolute;
   z-index: 2;
-  left: 112px;
-  bottom: 120px;
+  left: 98px;
+  bottom: -15px;
 }
 
 .flow-3 img {
@@ -780,4 +793,43 @@ p {
 .select:hover {
   background-color: #5b6188;
   padding: 0px 4px;
+}
+
+/* ---------------------------------- end of the modal ---------------------------------- */
+
+/* ---------------------------------- slider ---------------------------------- */
+
+.template-slider-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.template-slider-images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-anim img {
+  animation: fadeAnim 2s ease-out infinite;
+}
+@keyframes fadeAnim {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.human-slider {
+  width: 100%;
+  height: 100%;
 }
