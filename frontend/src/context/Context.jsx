@@ -45,7 +45,10 @@ export const CvProvider = ({ children }) => {
 
       setLoading(false);
       setUrl("");
-      window.open(`https://www.jotform.com/pdf-editor/${cloneId}`, "_blank");
+      window.open(
+        `https://www.jotform.com/pdf-editor/${cloneId}?preview=true`,
+        "_blank"
+      );
     } catch (error) {
       console.log(error);
       setLoading(false);

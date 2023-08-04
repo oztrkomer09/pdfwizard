@@ -816,7 +816,7 @@ p {
 }
 @keyframes fadeAnim {
   0% {
-    opacity: 0;
+    opacity: 0.8;
   }
   10% {
     opacity: 1;
@@ -825,7 +825,7 @@ p {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 0.8;
   }
 }
 
