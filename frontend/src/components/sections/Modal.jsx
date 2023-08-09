@@ -19,9 +19,21 @@ const Modal = () => {
           Explore the most suitable templates to create CV in minutes
         </p>
         <div className="modal-templates">
-          <ModalTemplate template={template1} tempID="10232062469471053" />
-          <ModalTemplate template={template2} tempID="10232073123524041" />
-          <ModalTemplate template={template3} tempID="10232072143564046" />
+          <ModalTemplate
+            template={template1}
+            tempID="10232062469471053"
+            tempTitle="Classical"
+          />
+          <ModalTemplate
+            template={template2}
+            tempID="10232073123524041"
+            tempTitle="Official"
+          />
+          <ModalTemplate
+            template={template3}
+            tempID="10232072143564046"
+            tempTitle="Creative"
+          />
         </div>
       </div>
     </div>

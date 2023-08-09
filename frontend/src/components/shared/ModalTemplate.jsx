@@ -1,7 +1,7 @@
 import React from "react";
 import { useCvContext } from "../../context/Context";
 
-const ModalTemplate = ({ template, tempID }) => {
+const ModalTemplate = ({ template, tempID, tempTitle }) => {
   const { chooseTemplateAndRun } = useCvContext();
 
   const selectTemplate = () => {
@@ -14,7 +14,7 @@ const ModalTemplate = ({ template, tempID }) => {
         Select
       </button>
       <img src={template} alt="template" />
-      <p className="template-title">Classical</p>
+      <p className="template-title">{tempTitle}</p>
     </div>
   );
 };
