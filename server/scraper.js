@@ -9,7 +9,7 @@ const runLinkedInScraper = async (url) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: "new",
+      headless: true,
       args: ['--no-sandbox', '--disable-setuid-sandbox'],
     });
     const page = await browser.newPage();
@@ -20,8 +20,8 @@ const runLinkedInScraper = async (url) => {
       'h1',
       'h1.top-card-layout__title',
       'div.core-section-container__content',
-     ' h3.profile-section-card__title',
-     'span.education__item--degree-info'
+      ' h3.profile-section-card__title',
+      'span.education__item--degree-info'
     ];
 
     await Promise.all(
