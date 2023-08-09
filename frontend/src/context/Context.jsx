@@ -35,7 +35,7 @@ export const CvProvider = ({ children }) => {
     await cloneTemplate();
     try {
       await axios.post(
-        "http://localhost/jotform-api-php/createSubmission.php",
+        "https://tireizmimarlik.com/pdfwizard/createSubmission.php",
         {
           cloned_form_id: cloneId,
           scraped_data: scrape,
@@ -71,7 +71,7 @@ export const CvProvider = ({ children }) => {
 
         try {
           const response = await axios.post(
-            "http://localhost/jotform-api-php/createForm.php",
+            "https://tireizmimarlik.com/pdfwizard/createForm.php",
             {
               api_key: apiKey,
               form_id: "232062121530034",
