@@ -25,7 +25,7 @@ const runLinkedInScraper = async (url) => {
     ];
 
     await Promise.all(
-      requiredSelectors.map((selector) => page.waitForSelector(selector, { timeout: 7000 }))
+      requiredSelectors.map((selector) => page.waitForSelector(selector, { timeout: 5000 }))
     );
 
     const data = await page.evaluate(() => {
