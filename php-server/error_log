@@ -1,0 +1,200 @@
+[07-Aug-2023 20:17:00 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:00 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:00 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:30 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:30 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:30 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:33 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:33 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:33 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:55 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:55 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:55 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:17:55 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:19
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(76): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 19
+[07-Aug-2023 20:18:06 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:06 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:06 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:06 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:19
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(76): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 19
+[07-Aug-2023 20:18:29 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:29 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:29 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:45 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:45 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:45 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:18:45 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:19
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(76): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 19
+[07-Aug-2023 20:20:36 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:20:36 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:20:36 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 3
+[07-Aug-2023 20:20:36 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:19
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(76): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 19
+[07-Aug-2023 20:22:06 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 5
+[07-Aug-2023 20:22:06 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 5
+[07-Aug-2023 20:22:06 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 5
+[07-Aug-2023 20:22:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:5) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:5) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 7
+[07-Aug-2023 20:22:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:5) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 8
+[07-Aug-2023 20:22:06 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:21
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(78): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 21
+[07-Aug-2023 20:22:23 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:23 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:23 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:6) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 7
+[07-Aug-2023 20:22:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:6) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 8
+[07-Aug-2023 20:22:23 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:6) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 9
+[07-Aug-2023 20:22:23 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:22
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(79): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 22
+[07-Aug-2023 20:22:24 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:24 UTC] PHP Warning:  include(./Jotform.php): Failed to open stream: No such file or directory in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:24 UTC] PHP Warning:  include(): Failed opening './Jotform.php' for inclusion (include_path='.:/opt/cpanel/ea-php81/root/usr/share/pear') in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 6
+[07-Aug-2023 20:22:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:6) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 7
+[07-Aug-2023 20:22:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:6) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 8
+[07-Aug-2023 20:22:24 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:6) in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 9
+[07-Aug-2023 20:22:24 UTC] PHP Fatal error:  Uncaught Error: Class "JotForm" not found in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php:22
+Stack trace:
+#0 /home/tir152mimarlcom/public_html/pdfwizard/createForm.php(79): scrapeAndCloneForm()
+#1 {main}
+  thrown in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 22
+[07-Aug-2023 20:38:30 UTC] PHP Parse error:  syntax error, unexpected variable "$response" in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 42
+[07-Aug-2023 20:38:37 UTC] PHP Parse error:  syntax error, unexpected variable "$response" in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 42
+[07-Aug-2023 20:38:48 UTC] PHP Parse error:  syntax error, unexpected variable "$response" in /home/tir152mimarlcom/public_html/pdfwizard/createForm.php on line 42
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[07-Aug-2023 21:34:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[07-Aug-2023 21:45:01 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[08-Aug-2023 07:44:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:27:52 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:28:18 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:28:48 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:31:42 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:32:36 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:32:57 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:34:07 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:36:02 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:36:26 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:36:40 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:41:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 42
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 43
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 44
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Undefined array key "data" in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
+[09-Aug-2023 10:44:15 UTC] PHP Warning:  Trying to access array offset on value of type null in /home/tir152mimarlcom/public_html/pdfwizard/createSubmission.php on line 45
