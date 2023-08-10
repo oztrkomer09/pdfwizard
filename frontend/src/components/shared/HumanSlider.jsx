@@ -26,9 +26,9 @@ const ImageSlider = () => {
           className={"flow-3-human" + (index + 3)}
           style={
             index === currentImageIndex
-              ? null
+              ? { transition: "all 0.2s ease-in-out" }
               : {
-                  filter: "grayscale(100%)",
+                  filter: "grayscale(100%) blur(2px)",
                   transition: "all 0.2s ease-in-out",
                 }
           }
