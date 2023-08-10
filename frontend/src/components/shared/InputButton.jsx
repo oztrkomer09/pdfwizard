@@ -10,7 +10,7 @@ const InputButtonComponent = () => {
       <input
         value={url}
         onChange={handleChange}
-        type="text"
+        type="url"
         placeholder="Paste the URL and run it!"
       />
       <button disabled={disabled} onClick={openModal}>
