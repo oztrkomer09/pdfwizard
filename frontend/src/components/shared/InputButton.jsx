@@ -3,7 +3,7 @@ import go from "../../assets/images/go.png";
 import { useCvContext } from "../../context/Context";
 
 const InputButtonComponent = () => {
-  const { url, disabled, cvWizard, handleChange, openModal } = useCvContext();
+  const { url, disabled, handleChange, openModal } = useCvContext();
 
   return (
     <div className="link-input">
@@ -11,7 +11,7 @@ const InputButtonComponent = () => {
         value={url}
         onChange={handleChange}
         type="text"
-        placeholder="URL'yi yapıştırın ve işlemi başlatın"
+        placeholder="Paste the URL and run it!"
       />
       <button disabled={disabled} onClick={openModal}>
         <img src={go} alt="Git" />
